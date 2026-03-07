@@ -1,0 +1,4 @@
+alu_test
+*.vcd
+*.out
+.DS_Storee
