@@ -38,9 +38,9 @@ initial begin
     write_data = 32'hDEADBEEF; // some test value, creative right?
     reg_write = 1;
 
-    #5;
+    #2;
     clk = 1;   // rising edge -> write happens here
-    #5;
+    #2;
     clk = 0;
 
     // read back x1
@@ -56,9 +56,9 @@ initial begin
     write_data = 32'hFFFFFFFF;
     reg_write = 1;
 
-    #5;
+    #2;
     clk = 1;   // rising edge
-    #5;
+    #2;
     clk = 0;
 
     // read x0
@@ -73,3 +73,5 @@ initial begin
     $finish;
     
 end
+
+endmodule
