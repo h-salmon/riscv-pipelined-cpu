@@ -47,30 +47,30 @@ Architecture diagrams will be added in the docs folder.
 
 ---
 
-# Project Structure
+## 📁 Project Structure
 
-riscv-pipelined-cpu
-│
-├── rtl
+```text
+riscv-pipelined-cpu/
+├── rtl/
 │   ├── alu.v
 │   ├── register_file.v
 │   ├── control_unit.v
 │   ├── pc.v
 │   └── cpu.v
 │
-├── sim
+├── sim/
 │   ├── cpu_tb.v
 │   └── test_program.hex
 │
-├── docs
+├── docs/
 │   ├── architecture.png
 │   ├── pipeline.png
 │   └── waveform.png
 │
-├── scripts
+├── scripts/
 │
 └── README.md
-
+```
 Folder description:
 
 | Folder | Purpose |
