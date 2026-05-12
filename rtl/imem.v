@@ -6,7 +6,7 @@ module imem (
     reg [31:0] mem [0:255];      // 256 words = 1KB of instruction memory
 
     initial begin
-        $readmemh("test_program.hex", mem);  // load program from hex file
+        $readmemh("sim/test_program.hex", mem);
     end
 
     // word-addressed: divide byte address by 4 (drop bottom 2 bits)
